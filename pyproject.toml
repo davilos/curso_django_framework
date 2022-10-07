@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "curso-django-framework"
+version = "0.1.0"
+description = ""
+authors = ["davilos <daviloscostagg@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "curso_django_framework"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
