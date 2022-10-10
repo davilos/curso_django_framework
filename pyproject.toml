@@ -9,6 +9,7 @@ packages = [{include = "curso_django_framework"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 Django = "^4.1.2"
+blue = "^0.9.1"
 
 
 [build-system]
