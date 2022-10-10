@@ -13,10 +13,27 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Cliente',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nome', models.CharField(max_length=100, verbose_name='Nome')),
-                ('sobrenome', models.CharField(max_length=100, verbose_name='Sobrenome')),
-                ('email', models.EmailField(max_length=100, verbose_name='E-mail')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID',
+                    ),
+                ),
+                (
+                    'nome',
+                    models.CharField(max_length=100, verbose_name='Nome'),
+                ),
+                (
+                    'sobrenome',
+                    models.CharField(max_length=100, verbose_name='Sobrenome'),
+                ),
+                (
+                    'email',
+                    models.EmailField(max_length=100, verbose_name='E-mail'),
+                ),
             ],
         ),
     ]
