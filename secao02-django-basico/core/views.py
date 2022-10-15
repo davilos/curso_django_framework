@@ -10,7 +10,7 @@ def index(request):
     context = {
         'curso': 'Programação Web com Django Framework',
         'outro': 'Django é massa!',
-        'produtos': produtos
+        'produtos': produtos,
     }
     return render(request, 'index.html', context)
 
@@ -25,19 +25,25 @@ def produto(request, pk):
     # prod = Produto.objects.get(id=pk)
     prod = get_object_or_404(Produto, id=pk)
 
-    context = {
-        'prod': prod
-    }
+    context = {'prod': prod}
     return render(request, 'produto.html', context)
 
 
 def error404(request, ex):
     template = loader.get_template('404.html')
 
-    return HttpResponse(content=template.render(), content_type='text/html; charset=utf-8', status=404)
+    return HttpResponse(
+        content=template.render(),
+        content_type='text/html; charset=utf-8',
+        status=404,
+    )
 
 
 def error500(request):
     template = loader.get_template('500.html')
 
-    return HttpResponse(content=template.render(), content_type='text/html; charset=utf-8', status=500)
+    return HttpResponse(
+        content=template.render(),
+        content_type='text/html; charset=utf-8',
+        status=500,
+    )

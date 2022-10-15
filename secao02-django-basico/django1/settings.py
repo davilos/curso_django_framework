@@ -29,7 +29,7 @@ SECRET_KEY = (
 # DEBUG com valor False = Modo de produção
 DEBUG = False
 
-ALLOWED_HOSTS = ['*'] 
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -121,8 +121,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/' # Usado durante o desenvolvimento
-STATIC_ROOT = BASE_DIR / 'staticfiles' # Usado durante a produção
+STATIC_URL = 'static/'   # Usado durante o desenvolvimento
+STATIC_ROOT = BASE_DIR / 'staticfiles/'   # Usado durante a produção
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
