@@ -81,10 +81,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'django2',
+        'HOST': 'localhost',
         'USER': 'davilos',
         'PASSWORD': 'amizade325',
-        'HOST': 'localhost',
-        'PORT': '3306',
     }
 }
 
@@ -113,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'America/Pernambuco'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
