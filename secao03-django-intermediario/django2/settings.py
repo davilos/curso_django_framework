@@ -147,5 +147,6 @@ EMAIL_USER_TSL = True
 EMAIL_HOST_PASSWORD = 'sua-senha'
 """
 
+LOGOUT_REDIRECT_URL = 'index'
 
 django_on_heroku.settings(locals())
